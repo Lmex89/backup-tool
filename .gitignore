@@ -29,6 +29,22 @@ test.db
 *.db-shm
 *.db-wal
 
+# Production databases (contain actual user data — NEVER commit)
+*.db
+*.sqlite
+*.sqlite3
+
 # Backups created during testing
 backups/
 test-backups/
+
+# Sensitive configuration (contains real filesystem paths and database locations)
+config.yaml
+config.yml
+
+# Environment variables and secrets
+.env
+.env.*
+*.key
+*.pem
+*.crt
